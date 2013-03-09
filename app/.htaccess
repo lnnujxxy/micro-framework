@@ -1,0 +1,4 @@
+# 请确保 mod_rewrite.so 开启
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]

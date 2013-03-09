@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统</title>
+<link href="{{$smarty.const.CSS_PATH}}frame.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{{$smarty.const.JS_PATH}}jquery-1.4.2.js"></script>
+<script type="text/javascript" src="{{$smarty.const.JS_PATH}}jquery.form.js"></script>
+<script type="text/javascript" src="{{$smarty.const.JS_PATH}}jquery.validate.js"></script>
+<script type="text/javascript" src="{{$smarty.const.JS_PATH}}jquery.metadata.js"></script>
+<script type="text/javascript" src="{{$smarty.const.JS_PATH}}jquery.submit.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#submit1').click(function() {
+		$('#form1').submitForm();
+	});
+	$('#submit2').click(function() {
+		$('#form1').submitForm({data: {url: 'http://www.sina.com.cn'}});
+	});
+	$('#submit3').click(function() {
+		$('#form1').submitForm({data: {isclose: 1}});
+	});
+});
+</script>
+
+</head>
+<body bgcolor="#f4fbf4">
+<div id="login">
+  <div class="theme fLeft">
+    <form name="form1" id="form1" method="post" action="?c=index&a=login" enctype="multipart/form-data">
+	  <div id="errors"><ul></ul></div>
+      <ul>
+        <li><span>用户名：</span>
+          <input type="text" name="username"  validate="{required:true,messages:{required:'用户名是必须的'}}" />
+        </li>
+        <li><span>密&nbsp;&nbsp;&nbsp;码：</span>
+          <input type="password" name="password"  validate="{required:true, maxlength:16,minlength:3, messages:{required:'密码是必须的',max:'密码不能超过16个字符','min':'密码不能小于3个字符'}}" />
+        </li>
+		<li style="padding-top:10px;"><span>&nbsp;</span>
+          <input type="submit" id="submit1" value="正常提交"/>
+		  <input type="submit" id="submit2" value="页面跳转"/>
+		  <input type="submit" id="submit3" value="关闭提交"/>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+</body>
+</html>

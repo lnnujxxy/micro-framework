@@ -1,0 +1,42 @@
+2010/05/26 15:02:12 [error] [Image] imglib_source_image_required
+2010/05/26 15:02:17 [error] [Image] imglib_source_image_required
+2010/05/26 15:03:05 [error] [Image] imglib_source_image_required
+2010/05/26 15:03:05 [error] [Image] imglib_source_image_required
+2010/05/26 15:03:56 [error] [Image] imglib_source_image_required
+2010/05/26 15:04:09 [error] [Image] imglib_source_image_required
+2010/05/26 15:11:07 [error] [Image] imglib_invalid_path
+2010/05/26 15:11:12 [error] [Image] imglib_invalid_path
+2010/05/26 15:11:13 [error] [Image] imglib_invalid_path
+2010/08/15 13:03:12 [exception] [] Function:getController Unfound EP_Controller:
+2010/08/15 13:03:22 [exception] [] Function:getController Unfound EP_Controller:
+2010/08/15 13:03:30 [exception] [] Function:getController Unfound EP_Controller:
+2010/08/15 13:03:36 [exception] [] Call to undefined action: EP_Controller::login1Action()
+<<<<<<< .mine
+2010/08/15 13:50:46 [exception] [] Call to undefined action: EP_Controller::textAction()
+2010/08/15 15:00:11 [exception] [] Call to undefined method: TestNewController::checkLogin()
+2010/08/15 15:00:25 [exception] [] Call to undefined method: TestNewController::checkLogin()
+2010/08/15 15:00:30 [exception] [] Call to undefined method: TestNewController::checkLogin()
+2010/08/15 15:00:41 [exception] [] Call to undefined method: TestNewController::checkLogin()
+=======
+2010/08/15 14:30:17 [exception] [] Call to undefined action: EP_Controller::list_adminAction()
+2010/08/15 14:49:05 [exception] [] SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'localhost' (10061)
+2010/08/15 14:49:07 [exception] [] SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'localhost' (10061)
+2010/08/15 14:49:13 [exception] [] SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'localhost' (10061)
+>>>>>>> .r51
+2010/08/20 16:09:15 [exception] [] Call to undefined action: Lib_Controller::indexAction()
+2010/08/23 11:56:03 [exception] [] Call to undefined action: Lib_Controller::indexAction()
+2010/08/23 13:49:43 [exception] [] controller:'IndexController Unfound Action:lsAction
+2010/08/23 13:50:12 [exception] [] controller:'IndexController Unfound Action:lsAction
+2010/08/23 13:50:14 [exception] [] controller:'IndexController Unfound Action:lsAction
+2010/08/23 13:50:15 [exception] [] controller:'IndexController Unfound Action:lsAction
+2010/08/23 14:07:53 [exception] [] Class:'Lib_Mvc'Method:Lib_Mvc::getController Unfound Controller:IndexController
+2010/08/23 14:07:55 [exception] [] Class:'Lib_Mvc'Method:Lib_Mvc::getController Unfound Controller:IndexController
+2010/08/23 14:07:57 [exception] [] Class:'Lib_Mvc'Method:Lib_Mvc::getController Unfound Controller:IndexController
+2010/08/23 15:05:36 [exception] [] SQLSTATE[42000] [1049] Unknown database 'chengming'
+2010/08/23 15:05:37 [exception] [] SQLSTATE[42000] [1049] Unknown database 'chengming'
+2010/08/23 15:05:38 [exception] [] SQLSTATE[42000] [1049] Unknown database 'chengming'
+2010/08/23 15:05:48 [exception] [] SQLSTATE[42000] [1049] Unknown database 'chengming'
+2010/08/23 15:06:26 [exception] [] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.test' doesn't exist
+2010/08/23 15:06:28 [exception] [] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.test' doesn't exist
+2010/08/23 15:06:29 [exception] [] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.test' doesn't exist
+2010/08/23 15:06:30 [exception] [] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.test' doesn't exist
