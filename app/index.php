@@ -5,7 +5,7 @@
  * @date: 2010-5-13
  * @version: 1.0
  */
-error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL);
 version_compare(PHP_VERSION, '5.3') < 0 && set_magic_quotes_runtime(0);
 header('Content-Type:text/html;charset=UTF-8');
 if (is_callable('mb_internal_encoding')) {
@@ -25,10 +25,9 @@ try {
 	include ROOT . 'common.php';
 	include APP_DIR . 'config/config.php';
 	include APP_DIR . 'config/constant.php';
-
 	Common::setConfig($config);
 	unset($config);
-
+    
 	Lib_Mvc::getInstance()->dispatch(Common::getTemplateDir());
 } catch (Exception $e) {
 	//throw $e;

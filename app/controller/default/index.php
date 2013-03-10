@@ -4,11 +4,8 @@ defined('IN_ROOT') || exit('Access Denied');
 class IndexController extends Lib_Controller {
 
     public function lsAction() {
-		$page = Helper_Request::getParam('page');
-		$data[] = array('str' => array('11111111111', '111111111111111'));
-		$data[] = array('str1' => '                 <script>alert("            第一个测试用例1")</script>');
-
-		$this->output($data, $page);
+        $this->assign('str', "Hellow World!");
+		$this->display("index_ls.html");
     }
 
 	public function abAction() {

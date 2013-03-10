@@ -79,7 +79,7 @@ class Lib_Controller extends Lib_Base {
 		$view = Lib_View::getInstance();
 		if($data) {
 			foreach($data as $item) {
-				$view->assign(key($item), current($item));
+                $view->assign(key($item), current($item));
 			}
 		}
 		if($return) {
@@ -106,5 +106,13 @@ class Lib_Controller extends Lib_Base {
 	public function output($data, $cacheid = null) {
 		$this->bindView($data);
 	}
+
+    public function assign($key, $value) {
+		Lib_View::getInstance()->assign($key, $value);
+    }
+
+    public function display($tpl) {
+		Lib_View::getInstance()->display($tpl);
+    }
 }
 ?>

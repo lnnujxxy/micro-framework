@@ -38,26 +38,12 @@ class Lib_View extends Lib_Base {
     }
 
     public function display($tpl = null, $cacheId = null) {
-		$this->setCompress();
 		$this->view->display($tpl, $cacheId);
     }
 
 	public function fetch($tpl=null, $cacheId=null) {
-		$this->setCompress();
         return $this->view->fetch($tpl, $cacheId);
 	}
 
-	/**
-	 * 设置压缩
-	 * @param void
-	 * @return void
-	 */
-	public function setCompress() {
-		$ob = ini_get("zlib.output_compression") !== '1' && extension_loaded("zlib") && (strpos(Helper_Request::env('HTTP_ACCEPT_ENCODING'), 'gzip') !== false);
-		if ($ob && $this->config['common']['compress']) {
-			ob_start();
-			ob_start('ob_gzhandler');
-		}
-	}
 }
 ?>
