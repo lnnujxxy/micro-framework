@@ -1,0 +1,27 @@
+{
+  "name": "pepper/framework",
+  "require": {
+    "pepper/lib" : "~1.0",
+    "pepper/process": "~1.0",
+    "pepper/qframedb": "~0.1",
+    "pepper/container": "~1.0",
+    "qcloud/cos-sdk-v5": "1.*",
+    "ddliu/wxpay": "^0.0.3"
+  },
+  "require-dev":{
+    "phpunit/phpunit":"~6.0",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pepper\\Framework\\Controller\\": "src/application/controller",
+      "Pepper\\Framework\\Dao\\": "src/application/dao",
+      "Pepper\\Framework\\Model\\": "src/application/model",
+      "Pepper\\Framework\\Lib\\": "src/application/lib",
+      "Pepper\\Framework\\Traits\\": "src/application/traits",
+      "Pepper\\Framework\\Process\\": "src/process",
+      "Pepper\\Framework\\Process\\Worker\\": "src/process/worker",
+      "Pepper\\Test\\": "test"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<?php
+// 模拟composer包测试环境配置文件
+$TEST = 'TEST';
+
+// 模拟子项目
+$PROJECT = 'live';

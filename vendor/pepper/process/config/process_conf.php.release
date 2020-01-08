@@ -1,0 +1,20 @@
+<?php
+use const Pepper\Process\QUEUE_TYPE_NORMAL;
+use const Pepper\Process\QUEUE_TYPE_PRIORITY;
+use const Pepper\Process\QUEUE_TYPE_ROUTE;
+use const Pepper\Process\QUEUE_TYPE_DELAY;
+
+$LOG_PATH   = '/data/nginx/logs/release/process/';
+$QUEUE_CONF = array(
+    "fx-wx"   => array(
+        "servers" => array(
+            0 => array(
+                array("host" => "154.8.195.226", "port" => 6399, "timeout" => 3, "password" => "fd9e1da1b91462be3342953ba3e6db36"),
+            ),
+        ),
+        "queue"   => array(
+            "save_wx_avatar" => array("type" => QUEUE_TYPE_NORMAL, "retry" => 2, "server" => 0), // 保存微信头像
+            "robot_help" => array("type" => QUEUE_TYPE_DELAY, "retry" => 2, "server" => 0), // 机器人互助
+        ),
+    ), 
+);

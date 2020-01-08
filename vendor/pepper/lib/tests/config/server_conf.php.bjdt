@@ -1,0 +1,6 @@
+<?php
+// 模拟composer包线上配置文件
+$TEST = 'BJDT';
+
+// 模拟子项目
+$PROJECT = 'live';

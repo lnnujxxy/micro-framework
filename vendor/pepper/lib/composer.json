@@ -1,0 +1,17 @@
+{
+  "name": "pepper/lib",
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pepper\\Lib\\": "src\\"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  }
+}

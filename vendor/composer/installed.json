@@ -1,0 +1,403 @@
+[
+    {
+        "name": "ddliu/wxpay",
+        "version": "v0.0.3",
+        "version_normalized": "0.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ddliu/php-wxpay.git",
+            "reference": "7d37a565751406fca99b24ad15ca4df587eea6ce"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ddliu/php-wxpay/zipball/7d37a565751406fca99b24ad15ca4df587eea6ce",
+            "reference": "7d37a565751406fca99b24ad15ca4df587eea6ce",
+            "shasum": ""
+        },
+        "time": "2015-09-27T13:23:16+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ddliu\\wxpay\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "dong",
+                "email": "ddliuhb@gmail.com"
+            }
+        ],
+        "description": "Weixin pay SDK"
+    },
+    {
+        "name": "guzzle/guzzle",
+        "version": "v3.9.3",
+        "version_normalized": "3.9.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/guzzle3.git",
+            "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/0645b70d953bc1c067bbc8d5bc53194706b628d9",
+            "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3.3",
+            "symfony/event-dispatcher": "~2.1"
+        },
+        "replace": {
+            "guzzle/batch": "self.version",
+            "guzzle/cache": "self.version",
+            "guzzle/common": "self.version",
+            "guzzle/http": "self.version",
+            "guzzle/inflection": "self.version",
+            "guzzle/iterator": "self.version",
+            "guzzle/log": "self.version",
+            "guzzle/parser": "self.version",
+            "guzzle/plugin": "self.version",
+            "guzzle/plugin-async": "self.version",
+            "guzzle/plugin-backoff": "self.version",
+            "guzzle/plugin-cache": "self.version",
+            "guzzle/plugin-cookie": "self.version",
+            "guzzle/plugin-curlauth": "self.version",
+            "guzzle/plugin-error-response": "self.version",
+            "guzzle/plugin-history": "self.version",
+            "guzzle/plugin-log": "self.version",
+            "guzzle/plugin-md5": "self.version",
+            "guzzle/plugin-mock": "self.version",
+            "guzzle/plugin-oauth": "self.version",
+            "guzzle/service": "self.version",
+            "guzzle/stream": "self.version"
+        },
+        "require-dev": {
+            "doctrine/cache": "~1.3",
+            "monolog/monolog": "~1.0",
+            "phpunit/phpunit": "3.7.*",
+            "psr/log": "~1.0",
+            "symfony/class-loader": "~2.1",
+            "zendframework/zend-cache": "2.*,<2.3",
+            "zendframework/zend-log": "2.*,<2.3"
+        },
+        "suggest": {
+            "guzzlehttp/guzzle": "Guzzle 5 has moved to a new package name. The package you have installed, Guzzle 3, is deprecated."
+        },
+        "time": "2015-03-18T18:23:50+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.9-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Guzzle": "src/",
+                "Guzzle\\Tests": "tests/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            },
+            {
+                "name": "Guzzle Community",
+                "homepage": "https://github.com/guzzle/guzzle/contributors"
+            }
+        ],
+        "description": "PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "client",
+            "curl",
+            "framework",
+            "http",
+            "http client",
+            "rest",
+            "web service"
+        ],
+        "abandoned": "guzzlehttp/guzzle"
+    },
+    {
+        "name": "pepper/container",
+        "version": "v1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "git@gitlab.huajiao.com:pepper/container.git",
+            "reference": "45795626c09338d5aac6962d2149e6a278b1a644"
+        },
+        "dist": {
+            "type": "tar",
+            "url": "http://package.huajiao.com//dist/pepper/container/pepper-container-v1.0-5d0a66.tar",
+            "reference": "45795626c09338d5aac6962d2149e6a278b1a644",
+            "shasum": "62a8a4d4cd41b5d32d295cd41df2147d76d70267"
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "time": "2018-04-16T13:35:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/helpers.php"
+            ],
+            "psr-4": {
+                "Pepper\\Container\\": "src"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "Pepper\\Container\\Tests\\": "tests"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylor@laravel.com"
+            }
+        ],
+        "description": "The Illuminate Container package.",
+        "homepage": "https://laravel.com",
+        "support": {
+            "issues": "https://github.com/laravel/framework/issues",
+            "source": "https://github.com/laravel/framework"
+        }
+    },
+    {
+        "name": "pepper/lib",
+        "version": "v1.16.3",
+        "version_normalized": "1.16.3.0",
+        "source": {
+            "type": "git",
+            "url": "git@gitlab.huajiao.com:pepper/lib.git",
+            "reference": "1b6352254d92728cb9741a88c21fb34eef1d7490"
+        },
+        "dist": {
+            "type": "tar",
+            "url": "http://package.huajiao.com//dist/pepper/lib/pepper-lib-v1.16.3-b4fb49.tar",
+            "reference": "1b6352254d92728cb9741a88c21fb34eef1d7490",
+            "shasum": "563f7b275814375b42f1a3065f663e1d2ad1e4ee"
+        },
+        "require": {
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0"
+        },
+        "time": "2018-08-03T02:18:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Pepper\\Lib\\": "src\\",
+                "Qihoo\\": "src\\S3\\s3_sdk\\Qihoo\\"
+            },
+            "files": [
+                "src/helper.php"
+            ]
+        },
+        "support": {
+            "email": "g-huajiao-pepper-dev@huajiao.tv"
+        }
+    },
+    {
+        "name": "pepper/process",
+        "version": "v1.23",
+        "version_normalized": "1.23.0.0",
+        "source": {
+            "type": "git",
+            "url": "git@gitlab.huajiao.com:pepper/process.git",
+            "reference": "2cf8170cda79083a8622f77179e93c90087c3857"
+        },
+        "dist": {
+            "type": "tar",
+            "url": "http://package.huajiao.com//dist/pepper/process/pepper-process-v1.23-fa330e.tar",
+            "reference": "2cf8170cda79083a8622f77179e93c90087c3857",
+            "shasum": "f8f0a67771041896f4220bcee48755e2c408fe9b"
+        },
+        "require": {
+            "pepper/lib": "~1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0"
+        },
+        "time": "2018-08-06T07:34:00+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Pepper\\Process\\": "src"
+            }
+        },
+        "authors": [
+            {
+                "name": "wangtonghe",
+                "email": "wangtonghe-hj@huajiao.tv"
+            }
+        ],
+        "description": "process",
+        "support": {
+            "email": "g-huajiao-pepper-dev@huajiao.tv"
+        }
+    },
+    {
+        "name": "pepper/qframedb",
+        "version": "v0.1",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "git@gitlab.huajiao.com:pepper/QFrameDB.git",
+            "reference": "7d9b07444b72aeaa512a928253d671f91e050d9f"
+        },
+        "dist": {
+            "type": "tar",
+            "url": "http://package.huajiao.com//dist/pepper/qframedb/pepper-qframedb-v0.1-be0b5e.tar",
+            "reference": "7d9b07444b72aeaa512a928253d671f91e050d9f",
+            "shasum": "14631083d3ada838afb815c1aaa1402605b0910e"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0"
+        },
+        "time": "2017-09-07T06:44:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Pepper\\QFrameDB\\": "src"
+            }
+        },
+        "description": "QFrameDB",
+        "support": {
+            "email": "g-huajiao-pepper-dev@huajiao.tv"
+        }
+    },
+    {
+        "name": "qcloud/cos-sdk-v5",
+        "version": "v1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tencentyun/cos-php-sdk-v5.git",
+            "reference": "989c087a5aaf9b5df020b1d2633644e7c9f694e0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tencentyun/cos-php-sdk-v5/zipball/989c087a5aaf9b5df020b1d2633644e7c9f694e0",
+            "reference": "989c087a5aaf9b5df020b1d2633644e7c9f694e0",
+            "shasum": ""
+        },
+        "require": {
+            "guzzle/guzzle": "~3.7",
+            "php": ">=5.3.0"
+        },
+        "time": "2018-11-27T13:31:54+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Qcloud\\Cos\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "yaozongyou",
+                "email": "yaozongyou@vip.qq.com"
+            },
+            {
+                "name": "lewzylu",
+                "email": "327874225@qq.com"
+            }
+        ],
+        "description": "PHP SDK for QCloud COS",
+        "keywords": [
+            "cos",
+            "php",
+            "qcloud"
+        ]
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "v2.8.49",
+        "version_normalized": "2.8.49.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/event-dispatcher.git",
+            "reference": "a77e974a5fecb4398833b0709210e3d5e334ffb0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/a77e974a5fecb4398833b0709210e3d5e334ffb0",
+            "reference": "a77e974a5fecb4398833b0709210e3d5e334ffb0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "^2.0.5|~3.0.0",
+            "symfony/dependency-injection": "~2.6|~3.0.0",
+            "symfony/expression-language": "~2.6|~3.0.0",
+            "symfony/stopwatch": "~2.3|~3.0.0"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "",
+            "symfony/http-kernel": ""
+        },
+        "time": "2018-11-21T14:20:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\EventDispatcher\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "https://symfony.com"
+    }
+]
